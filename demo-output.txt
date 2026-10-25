@@ -1,0 +1,8 @@
+T1 PASS | Calculator + AddStrategy | 10 + 5 = 15.0
+T2 PASS | Calculator + SubtractStrategy | 10 - 5 = 5.0
+T3 PASS | Calculator + MultiplyStrategy | 10 * 5 = 50.0
+T4 PASS | Runtime Strategy Switch on Same Context Instance | sameInstance=true | Add(24.0) -> Multiply(80.0)
+T5 PASS | Calculator + DivideStrategy (Extension) | 10 / 5 = 2.0
+T6 PASS | Invariant Defense | Null Strategy Rejection verified
+T7 PASS | Input Validation | Division by zero rejected safely
+SUMMARY: 7/7 PASS

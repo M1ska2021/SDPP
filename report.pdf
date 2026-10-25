@@ -1,0 +1,302 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 4 0 R 5 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 6 0 R /Resources << /Font << /F1 9 0 R /F2 10 0 R /F3 11 0 R /F4 12 0 R >> >> >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 7 0 R /Resources << /Font << /F1 9 0 R /F2 10 0 R /F3 11 0 R /F4 12 0 R >> >> >>
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 8 0 R /Resources << /Font << /F1 9 0 R /F2 10 0 R /F3 11 0 R /F4 12 0 R >> >> >>
+endobj
+6 0 obj
+<< /Length 8482 >>
+stream
+q 0.150 0.350 0.650 rg 40.00 800.00 515.28 1.50 re f Q
+q 0.700 0.700 0.700 rg 40.00 45.00 515.28 0.80 re f Q
+BT /F2 17 Tf 0.100 0.200 0.450 rg 40.00 775.00 Td (Assignment #5: Strategy Design Pattern Report) Tj ET
+BT /F1 9 Tf 0.350 0.350 0.350 rg 40.00 760.00 Td (ShP-2216 Software Design Patterns | School of Software Engineering | Astana IT University) Tj ET
+q 0.820 0.850 0.900 RG 0.80 w 0.960 0.970 0.990 rg 40.00 685.00 515.00 65.00 re B Q
+BT /F2 8.5 Tf 0.150 0.150 0.200 rg 50.00 732.00 Td (Student Name:) Tj ET
+BT /F1 8.5 Tf 0.200 0.200 0.200 rg 135.00 732.00 Td (Alibi Maksut) Tj ET
+BT /F2 8.5 Tf 0.150 0.150 0.200 rg 300.00 732.00 Td (Academic Group:) Tj ET
+BT /F1 8.5 Tf 0.200 0.200 0.200 rg 390.00 732.00 Td (SE-2523 \(2nd Year, 4th Trimester\)) Tj ET
+BT /F2 8.5 Tf 0.150 0.150 0.200 rg 50.00 716.00 Td (Chosen Topic:) Tj ET
+BT /F1 8.5 Tf 0.200 0.200 0.200 rg 135.00 716.00 Td (Option B - Calculator) Tj ET
+BT /F2 8.5 Tf 0.150 0.150 0.200 rg 300.00 716.00 Td (Target Runtime:) Tj ET
+BT /F1 8.5 Tf 0.200 0.200 0.200 rg 390.00 716.00 Td (Java 17+ \(IntelliJ IDEA\)) Tj ET
+BT /F2 8.5 Tf 0.150 0.150 0.200 rg 50.00 700.00 Td (Repository URL:) Tj ET
+BT /F1 8.5 Tf 0.200 0.200 0.200 rg 135.00 700.00 Td (https://github.com/M1ska2021/Assignment5_Strategy) Tj ET
+BT /F2 8.5 Tf 0.150 0.150 0.200 rg 300.00 700.00 Td (Submission Date:) Tj ET
+BT /F1 8.5 Tf 0.200 0.200 0.200 rg 390.00 700.00 Td (26.10.2026, 11:59 PM) Tj ET
+q 0.800 0.850 0.920 RG 0.80 w 0.920 0.940 0.980 rg 40.00 661.00 515.00 20.00 re B Q
+q 0.150 0.350 0.650 rg 40.00 661.00 4.00 20.00 re f Q
+BT /F2 11 Tf 0.100 0.200 0.450 rg 50.00 667.00 Td (1. Introduction - Chosen Domain & Algorithm Family) Tj ET
+BT /F1 8.3 Tf 0.200 0.200 0.200 rg 45.00 643.00 Td (For this assignment, Option B \(Calculator\) was implemented. In standard arithmetic computing systems, operations) Tj ET
+BT /F1 8.3 Tf 0.200 0.200 0.200 rg 45.00 631.50 Td (are often implemented through a long conditional switch/if-else ladder. This violates Open/Closed and Single) Tj ET
+BT /F1 8.3 Tf 0.200 0.200 0.200 rg 45.00 620.00 Td (Responsibility principles: adding a new operator requires modifying the dispatcher.) Tj ET
+BT /F1 8.3 Tf 0.200 0.200 0.200 rg 45.00 608.50 Td (The Strategy pattern solves this by encapsulating each arithmetic rule \(AddStrategy, SubtractStrategy, MultiplyStrategy,) Tj ET
+BT /F1 8.3 Tf 0.200 0.200 0.200 rg 45.00 597.00 Td (DivideStrategy\) behind a common Strategy interface, delegating execution to interchangeable algorithm objects inside) Tj ET
+BT /F1 8.3 Tf 0.200 0.200 0.200 rg 45.00 585.50 Td (the Calculator context without any conditional logic.) Tj ET
+q 0.800 0.850 0.920 RG 0.80 w 0.920 0.940 0.980 rg 40.00 556.00 515.00 20.00 re B Q
+q 0.150 0.350 0.650 rg 40.00 556.00 4.00 20.00 re f Q
+BT /F2 11 Tf 0.100 0.200 0.450 rg 50.00 562.00 Td (2. UML Class Diagram & Architecture Mapping) Tj ET
+q 0.200 0.350 0.600 RG 1.00 w 1.000 1.000 1.000 rg 45.00 450.00 160.00 85.00 re B Q
+q 0.200 0.350 0.600 RG 1.00 w 0.920 0.940 0.980 rg 45.00 515.00 160.00 20.00 re B Q
+BT /F2 8.5 Tf 0.100 0.200 0.400 rg 80.00 522.00 Td (Calculator \(Context\)) Tj ET
+BT /F3 7.5 Tf 0.200 0.200 0.200 rg 50.00 502.00 Td (- strategy: Strategy) Tj ET
+q 0.700 0.700 0.700 RG 0.50 w 45.00 495.00 m 205.00 495.00 l S Q
+BT /F3 7.5 Tf 0.200 0.200 0.200 rg 50.00 482.00 Td (+ Calculator\(strategy\)) Tj ET
+BT /F3 7.5 Tf 0.200 0.200 0.200 rg 50.00 469.00 Td (+ setStrategy\(strategy\): void) Tj ET
+BT /F3 7.5 Tf 0.200 0.200 0.200 rg 50.00 456.00 Td (+ calculate\(a, b\): double) Tj ET
+q 0.200 0.550 0.350 RG 1.00 w 1.000 1.000 1.000 rg 280.00 455.00 235.00 75.00 re B Q
+q 0.200 0.550 0.350 RG 1.00 w 0.920 0.970 0.930 rg 280.00 510.00 235.00 20.00 re B Q
+BT /F2 8.5 Tf 0.100 0.400 0.200 rg 345.00 517.00 Td (<<interface>> Strategy) Tj ET
+BT /F3 7.5 Tf 0.200 0.200 0.200 rg 285.00 493.00 Td (+ execute\(a: double, b: double\): double) Tj ET
+BT /F3 7.5 Tf 0.200 0.200 0.200 rg 285.00 478.00 Td (+ getOperationName\(\): String) Tj ET
+q 0.200 0.350 0.600 RG 1.20 w 205.00 495.00 m 280.00 495.00 l S Q
+BT /F1 7.5 Tf 0.300 0.300 0.300 rg 220.00 500.00 Td (delegates to) Tj ET
+q 0.600 0.600 0.600 RG 0.80 w 1.000 1.000 1.000 rg 45.00 345.00 115.00 60.00 re B Q
+q 0.600 0.600 0.600 RG 0.80 w 0.950 0.950 0.950 rg 45.00 389.00 115.00 16.00 re B Q
+BT /F2 7.8 Tf 0.150 0.150 0.150 rg 53.00 393.00 Td (AddStrategy) Tj ET
+BT /F1 7.2 Tf 0.300 0.300 0.300 rg 51.00 377.00 Td (execute\(a, b\):) Tj ET
+BT /F1 7.2 Tf 0.300 0.300 0.300 rg 51.00 367.00 Td (return a + b) Tj ET
+q 0.500 0.500 0.500 RG 0.80 w [3 3] 0 d 102.50 405.00 m 102.50 435.00 l S Q
+q 0.600 0.600 0.600 RG 0.80 w 1.000 1.000 1.000 rg 175.00 345.00 115.00 60.00 re B Q
+q 0.600 0.600 0.600 RG 0.80 w 0.950 0.950 0.950 rg 175.00 389.00 115.00 16.00 re B Q
+BT /F2 7.8 Tf 0.150 0.150 0.150 rg 183.00 393.00 Td (SubtractStrategy) Tj ET
+BT /F1 7.2 Tf 0.300 0.300 0.300 rg 181.00 377.00 Td (execute\(a, b\):) Tj ET
+BT /F1 7.2 Tf 0.300 0.300 0.300 rg 181.00 367.00 Td (return a - b) Tj ET
+q 0.500 0.500 0.500 RG 0.80 w [3 3] 0 d 232.50 405.00 m 232.50 435.00 l S Q
+q 0.600 0.600 0.600 RG 0.80 w 1.000 1.000 1.000 rg 305.00 345.00 115.00 60.00 re B Q
+q 0.600 0.600 0.600 RG 0.80 w 0.950 0.950 0.950 rg 305.00 389.00 115.00 16.00 re B Q
+BT /F2 7.8 Tf 0.150 0.150 0.150 rg 313.00 393.00 Td (MultiplyStrategy) Tj ET
+BT /F1 7.2 Tf 0.300 0.300 0.300 rg 311.00 377.00 Td (execute\(a, b\):) Tj ET
+BT /F1 7.2 Tf 0.300 0.300 0.300 rg 311.00 367.00 Td (return a * b) Tj ET
+q 0.500 0.500 0.500 RG 0.80 w [3 3] 0 d 362.50 405.00 m 362.50 435.00 l S Q
+q 0.600 0.600 0.600 RG 0.80 w 1.000 1.000 1.000 rg 435.00 345.00 125.00 60.00 re B Q
+q 0.600 0.600 0.600 RG 0.80 w 0.950 0.950 0.950 rg 435.00 389.00 125.00 16.00 re B Q
+BT /F2 7.8 Tf 0.150 0.150 0.150 rg 443.00 393.00 Td (DivideStrategy \(Ext\)) Tj ET
+BT /F1 7.2 Tf 0.300 0.300 0.300 rg 441.00 377.00 Td (execute\(a, b\):) Tj ET
+BT /F1 7.2 Tf 0.300 0.300 0.300 rg 441.00 367.00 Td (if \(b==0\) throw) Tj ET
+BT /F1 7.2 Tf 0.300 0.300 0.300 rg 441.00 357.00 Td (return a / b) Tj ET
+q 0.500 0.500 0.500 RG 0.80 w [3 3] 0 d 497.50 405.00 m 497.50 435.00 l S Q
+q 0.500 0.500 0.500 RG 0.80 w [3 3] 0 d 102.00 435.00 m 497.00 435.00 l S Q
+q 0.500 0.500 0.500 RG 0.80 w [3 3] 0 d 397.00 435.00 m 397.00 455.00 l S Q
+q 0.800 0.850 0.920 RG 0.80 w 0.920 0.940 0.980 rg 40.00 291.00 515.00 20.00 re B Q
+q 0.150 0.350 0.650 rg 40.00 291.00 4.00 20.00 re f Q
+BT /F2 11 Tf 0.100 0.200 0.450 rg 50.00 297.00 Td (3. Technical Requirements Compliance Matrix) Tj ET
+q 0.150 0.350 0.650 rg 40.00 263.00 515.00 18.00 re f Q
+BT /F2 8.2 Tf 1.000 1.000 1.000 rg 48.00 268.00 Td (Component) Tj ET
+BT /F2 8.2 Tf 1.000 1.000 1.000 rg 150.00 268.00 Td (Formal Requirement) Tj ET
+BT /F2 8.2 Tf 1.000 1.000 1.000 rg 360.00 268.00 Td (Implementation Defense) Tj ET
+q 0.850 0.880 0.920 RG 0.50 w 1.000 1.000 1.000 rg 40.00 245.00 515.00 18.00 re B Q
+BT /F2 7.8 Tf 0.150 0.150 0.200 rg 48.00 250.00 Td (Strategy Interface) Tj ET
+BT /F1 7.5 Tf 0.250 0.250 0.250 rg 150.00 250.00 Td (Declares common execution method) Tj ET
+BT /F3 7.2 Tf 0.100 0.350 0.200 rg 360.00 250.00 Td (Strategy defines execute\(double a, double b\)) Tj ET
+q 0.850 0.880 0.920 RG 0.50 w 1.000 1.000 1.000 rg 40.00 227.00 515.00 18.00 re B Q
+BT /F2 7.8 Tf 0.150 0.150 0.200 rg 48.00 232.00 Td (Concrete Strategies) Tj ET
+BT /F1 7.5 Tf 0.250 0.250 0.250 rg 150.00 232.00 Td (>=3 interchangeable algorithm variants) Tj ET
+BT /F3 7.2 Tf 0.100 0.350 0.200 rg 360.00 232.00 Td (AddStrategy, SubtractStrategy, MultiplyStrategy + DivideStrategy) Tj ET
+q 0.850 0.880 0.920 RG 0.50 w 1.000 1.000 1.000 rg 40.00 209.00 515.00 18.00 re B Q
+BT /F2 7.8 Tf 0.150 0.150 0.200 rg 48.00 214.00 Td (Context) Tj ET
+BT /F1 7.5 Tf 0.250 0.250 0.250 rg 150.00 214.00 Td (Holds strategy ref & delegates execution) Tj ET
+BT /F3 7.2 Tf 0.100 0.350 0.200 rg 360.00 214.00 Td (Calculator delegates without conditionals; supports setStrategy\(\)) Tj ET
+q 0.850 0.880 0.920 RG 0.50 w 1.000 1.000 1.000 rg 40.00 191.00 515.00 18.00 re B Q
+BT /F2 7.8 Tf 0.150 0.150 0.200 rg 48.00 196.00 Td (Client) Tj ET
+BT /F1 7.5 Tf 0.250 0.250 0.250 rg 150.00 196.00 Td (Configures strategy; no if/switch in context) Tj ET
+BT /F3 7.2 Tf 0.100 0.350 0.200 rg 360.00 196.00 Td (Main configures concrete strategies directly; Context has zero branching) Tj ET
+BT /F1 8.5 Tf 0.400 0.400 0.400 rg 40.00 32.00 Td (Astana IT University | ShP-2216 Software Design Patterns | Page 1 of 3) Tj ET
+BT /F1 8.5 Tf 0.400 0.400 0.400 rg 450.00 32.00 Td (Alibi Maksut \(SE-2523\)) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Length 5550 >>
+stream
+q 0.150 0.350 0.650 rg 40.00 800.00 515.28 1.50 re f Q
+q 0.700 0.700 0.700 rg 40.00 45.00 515.28 0.80 re f Q
+q 0.800 0.850 0.920 RG 0.80 w 0.920 0.940 0.980 rg 40.00 771.00 515.00 20.00 re B Q
+q 0.150 0.350 0.650 rg 40.00 771.00 4.00 20.00 re f Q
+BT /F2 11 Tf 0.100 0.200 0.450 rg 50.00 777.00 Td (4. Clean Code Requirements & Defense \(Martin, Ch. 10\)) Tj ET
+BT /F2 9.5 Tf 0.100 0.250 0.500 rg 45.00 752.00 Td (4.1 Elimination of Conditional/Branching Logic in Favor of Polymorphism) Tj ET
+q 0.800 0.820 0.860 RG 0.80 w 0.970 0.980 0.990 rg 45.00 665.00 245.00 75.00 re B Q
+q 0.800 0.820 0.860 RG 0.80 w 0.910 0.930 0.960 rg 45.00 724.00 245.00 16.00 re B Q
+BT /F2 8.5 Tf 0.200 0.250 0.350 rg 53.00 728.00 Td (Before: Anti-pattern Procedural Switch) Tj ET
+BT /F3 7.8 Tf 0.150 0.150 0.200 rg 53.00 712.00 Td (public double calculate\(String op, double a, double b\) {) Tj ET
+BT /F3 7.8 Tf 0.150 0.150 0.200 rg 53.00 701.50 Td (  if \(op.equals\("+"\)\) return a + b;) Tj ET
+BT /F3 7.8 Tf 0.150 0.150 0.200 rg 53.00 691.00 Td (  else if \(op.equals\("-"\)\) return a - b;) Tj ET
+BT /F3 7.8 Tf 0.150 0.150 0.200 rg 53.00 680.50 Td (  else if \(op.equals\("*"\)\) return a * b;) Tj ET
+BT /F3 7.8 Tf 0.150 0.150 0.200 rg 53.00 670.00 Td (  throw new UnsupportedOperationException\(\);) Tj ET
+BT /F3 7.8 Tf 0.150 0.150 0.200 rg 53.00 659.50 Td (}) Tj ET
+q 0.800 0.820 0.860 RG 0.80 w 0.970 0.980 0.990 rg 305.00 665.00 250.00 75.00 re B Q
+q 0.800 0.820 0.860 RG 0.80 w 0.910 0.930 0.960 rg 305.00 724.00 250.00 16.00 re B Q
+BT /F2 8.5 Tf 0.200 0.250 0.350 rg 313.00 728.00 Td (After: Polymorphic Delegation \(Calculator.java\)) Tj ET
+BT /F3 7.8 Tf 0.150 0.150 0.200 rg 313.00 712.00 Td (public double calculate\(double a, double b\) {) Tj ET
+BT /F3 7.8 Tf 0.150 0.150 0.200 rg 313.00 701.50 Td (  return strategy.execute\(a, b\);) Tj ET
+BT /F3 7.8 Tf 0.150 0.150 0.200 rg 313.00 691.00 Td (}) Tj ET
+BT /F3 7.8 Tf 0.150 0.150 0.200 rg 313.00 680.50 Td (this.strategy = Objects.requireNonNull\(strategy\);) Tj ET
+BT /F3 7.8 Tf 0.150 0.150 0.200 rg 313.00 670.00 Td (// Completely branch-free and algorithm-agnostic) Tj ET
+BT /F2 9.5 Tf 0.100 0.250 0.500 rg 45.00 648.00 Td (4.2 Meaningful, Intention-Revealing Names) Tj ET
+q 0.800 0.820 0.860 RG 0.80 w 0.970 0.980 0.990 rg 45.00 588.00 510.00 48.00 re B Q
+q 0.800 0.820 0.860 RG 0.80 w 0.910 0.930 0.960 rg 45.00 620.00 510.00 16.00 re B Q
+BT /F2 8.5 Tf 0.200 0.250 0.350 rg 53.00 624.00 Td (Intention-Revealing Signatures) Tj ET
+BT /F3 7.8 Tf 0.150 0.150 0.200 rg 53.00 608.00 Td (public interface Strategy { double execute\(double a, double b\); String getOperationName\(\); }) Tj ET
+BT /F3 7.8 Tf 0.150 0.150 0.200 rg 53.00 597.50 Td (public class AddStrategy implements Strategy | public class SubtractStrategy implements Strategy) Tj ET
+BT /F3 7.8 Tf 0.150 0.150 0.200 rg 53.00 587.00 Td (public class Calculator { public void setStrategy\(Strategy strategy\) { ... } }) Tj ET
+BT /F2 9.5 Tf 0.100 0.250 0.500 rg 45.00 566.00 Td (4.3 Single Responsibility Principle \(SRP\)) Tj ET
+q 0.800 0.820 0.860 RG 0.80 w 0.970 0.980 0.990 rg 45.00 506.00 510.00 48.00 re B Q
+q 0.800 0.820 0.860 RG 0.80 w 0.910 0.930 0.960 rg 45.00 538.00 510.00 16.00 re B Q
+BT /F2 8.5 Tf 0.200 0.250 0.350 rg 53.00 542.00 Td (Isolated Operation \(SubtractStrategy.java\)) Tj ET
+BT /F3 7.8 Tf 0.150 0.150 0.200 rg 53.00 526.00 Td (public class SubtractStrategy implements Strategy {) Tj ET
+BT /F3 7.8 Tf 0.150 0.150 0.200 rg 53.00 515.50 Td (  @Override public double execute\(double a, double b\) { return a - b; }) Tj ET
+BT /F3 7.8 Tf 0.150 0.150 0.200 rg 53.00 505.00 Td (}) Tj ET
+BT /F2 9.5 Tf 0.100 0.250 0.500 rg 45.00 484.00 Td (4.4 Context Remains Algorithm-Agnostic) Tj ET
+q 0.800 0.820 0.860 RG 0.80 w 0.970 0.980 0.990 rg 45.00 424.00 510.00 48.00 re B Q
+q 0.800 0.820 0.860 RG 0.80 w 0.910 0.930 0.960 rg 45.00 456.00 510.00 16.00 re B Q
+BT /F2 8.5 Tf 0.200 0.250 0.350 rg 53.00 460.00 Td (Decoupled Context \(Calculator.java\)) Tj ET
+BT /F3 7.8 Tf 0.150 0.150 0.200 rg 53.00 444.00 Td (public class Calculator {) Tj ET
+BT /F3 7.8 Tf 0.150 0.150 0.200 rg 53.00 433.50 Td (  private Strategy strategy;) Tj ET
+BT /F3 7.8 Tf 0.150 0.150 0.200 rg 53.00 423.00 Td (  public Calculator\(Strategy strategy\) { this.strategy = Objects.requireNonNull\(strategy\); }) Tj ET
+BT /F2 9.5 Tf 0.100 0.250 0.500 rg 45.00 402.00 Td (4.5 Easy Extensibility Demonstrated \(Open/Closed Principle\)) Tj ET
+q 0.800 0.820 0.860 RG 0.80 w 0.970 0.980 0.990 rg 45.00 322.00 510.00 68.00 re B Q
+q 0.800 0.820 0.860 RG 0.80 w 0.910 0.930 0.960 rg 45.00 374.00 510.00 16.00 re B Q
+BT /F2 8.5 Tf 0.200 0.250 0.350 rg 53.00 378.00 Td (Independent Strategy Addition \(extension.diff\)) Tj ET
+BT /F3 7.8 Tf 0.150 0.150 0.200 rg 53.00 362.00 Td (+++ b/src/DivideStrategy.java) Tj ET
+BT /F3 7.8 Tf 0.150 0.150 0.200 rg 53.00 351.50 Td (+public class DivideStrategy implements Strategy {) Tj ET
+BT /F3 7.8 Tf 0.150 0.150 0.200 rg 53.00 341.00 Td (+  public double execute\(double a, double b\) {) Tj ET
+BT /F3 7.8 Tf 0.150 0.150 0.200 rg 53.00 330.50 Td (+    if \(b == 0\) throw new ArithmeticException\("Division by zero"\);) Tj ET
+BT /F3 7.8 Tf 0.150 0.150 0.200 rg 53.00 320.00 Td (+    return a / b;) Tj ET
+BT /F3 7.8 Tf 0.150 0.150 0.200 rg 53.00 309.50 Td (+  }) Tj ET
+BT /F3 7.8 Tf 0.150 0.150 0.200 rg 53.00 299.00 Td (+}) Tj ET
+BT /F1 8.5 Tf 0.400 0.400 0.400 rg 40.00 32.00 Td (Astana IT University | ShP-2216 Software Design Patterns | Page 2 of 3) Tj ET
+BT /F1 8.5 Tf 0.400 0.400 0.400 rg 450.00 32.00 Td (Alibi Maksut \(SE-2523\)) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Length 7720 >>
+stream
+q 0.150 0.350 0.650 rg 40.00 800.00 515.28 1.50 re f Q
+q 0.700 0.700 0.700 rg 40.00 45.00 515.28 0.80 re f Q
+q 0.800 0.850 0.920 RG 0.80 w 0.920 0.940 0.980 rg 40.00 771.00 515.00 20.00 re B Q
+q 0.150 0.350 0.650 rg 40.00 771.00 4.00 20.00 re f Q
+BT /F2 11 Tf 0.100 0.200 0.450 rg 50.00 777.00 Td (5. Strategy vs. State Pattern Comparison \(Lecture 7\)) Tj ET
+q 0.150 0.350 0.650 rg 40.00 745.00 515.00 16.00 re f Q
+BT /F2 8 Tf 1.000 1.000 1.000 rg 48.00 749.00 Td (Criterion) Tj ET
+BT /F2 8 Tf 1.000 1.000 1.000 rg 130.00 749.00 Td (Strategy Pattern \(Applied Here\)) Tj ET
+BT /F2 8 Tf 1.000 1.000 1.000 rg 345.00 749.00 Td (State Pattern \(Alternative\)) Tj ET
+q 0.850 0.880 0.920 RG 0.50 w 1.000 1.000 1.000 rg 40.00 727.00 515.00 18.00 re B Q
+BT /F2 7.5 Tf 0.150 0.150 0.200 rg 48.00 732.00 Td (Intent) Tj ET
+BT /F1 7.3 Tf 0.100 0.350 0.200 rg 130.00 732.00 Td (Encapsulates interchangeable algorithmic logic) Tj ET
+BT /F1 7.3 Tf 0.400 0.200 0.200 rg 345.00 732.00 Td (Encapsulates state-dependent object behavior) Tj ET
+q 0.850 0.880 0.920 RG 0.50 w 1.000 1.000 1.000 rg 40.00 709.00 515.00 18.00 re B Q
+BT /F2 7.5 Tf 0.150 0.150 0.200 rg 48.00 714.00 Td (Coupling) Tj ET
+BT /F1 7.3 Tf 0.100 0.350 0.200 rg 130.00 714.00 Td (Strategies are completely decoupled and unaware of each other) Tj ET
+BT /F1 7.3 Tf 0.400 0.200 0.200 rg 345.00 714.00 Td (Concrete states frequently know and reference sibling states) Tj ET
+q 0.850 0.880 0.920 RG 0.50 w 1.000 1.000 1.000 rg 40.00 691.00 515.00 18.00 re B Q
+BT /F2 7.5 Tf 0.150 0.150 0.200 rg 48.00 696.00 Td (Transitions) Tj ET
+BT /F1 7.3 Tf 0.100 0.350 0.200 rg 130.00 696.00 Td (Client or external caller triggers strategy replacement) Tj ET
+BT /F1 7.3 Tf 0.400 0.200 0.200 rg 345.00 696.00 Td (States autonomously initiate transitions on the Context object) Tj ET
+q 0.850 0.880 0.920 RG 0.50 w 1.000 1.000 1.000 rg 40.00 673.00 515.00 18.00 re B Q
+BT /F2 7.5 Tf 0.150 0.150 0.200 rg 48.00 678.00 Td (Domain Fit) Tj ET
+BT /F1 7.3 Tf 0.100 0.350 0.200 rg 130.00 678.00 Td (Operations are independent calculations selected by user) Tj ET
+BT /F1 7.3 Tf 0.400 0.200 0.200 rg 345.00 678.00 Td (Inappropriate: Addition does not transition to Multiplication) Tj ET
+q 0.800 0.850 0.920 RG 0.80 w 0.920 0.940 0.980 rg 40.00 611.00 515.00 20.00 re B Q
+q 0.150 0.350 0.650 rg 40.00 611.00 4.00 20.00 re f Q
+BT /F2 11 Tf 0.100 0.200 0.450 rg 50.00 617.00 Td (6. Test Suite & Verification \(T1-T7\)) Tj ET
+q 0.150 0.350 0.650 rg 40.00 585.00 515.00 16.00 re f Q
+BT /F2 8 Tf 1.000 1.000 1.000 rg 48.00 589.00 Td (Test) Tj ET
+BT /F2 8 Tf 1.000 1.000 1.000 rg 80.00 589.00 Td (Verification Target) Tj ET
+BT /F2 8 Tf 1.000 1.000 1.000 rg 250.00 589.00 Td (Demonstration Output) Tj ET
+BT /F2 8 Tf 1.000 1.000 1.000 rg 485.00 589.00 Td (Status) Tj ET
+q 0.850 0.880 0.920 RG 0.50 w 1.000 1.000 1.000 rg 40.00 567.00 515.00 17.00 re B Q
+BT /F2 7.8 Tf 0.100 0.100 0.100 rg 48.00 571.00 Td (T1) Tj ET
+BT /F1 7.6 Tf 0.150 0.150 0.150 rg 80.00 571.00 Td (AddStrategy Execution) Tj ET
+BT /F3 7.2 Tf 0.100 0.250 0.450 rg 250.00 571.00 Td (10 + 5 = 15.0) Tj ET
+BT /F2 8 Tf 0.100 0.550 0.200 rg 485.00 571.00 Td (PASS) Tj ET
+q 0.850 0.880 0.920 RG 0.50 w 0.970 0.980 1.000 rg 40.00 550.00 515.00 17.00 re B Q
+BT /F2 7.8 Tf 0.100 0.100 0.100 rg 48.00 554.00 Td (T2) Tj ET
+BT /F1 7.6 Tf 0.150 0.150 0.150 rg 80.00 554.00 Td (SubtractStrategy Execution) Tj ET
+BT /F3 7.2 Tf 0.100 0.250 0.450 rg 250.00 554.00 Td (10 - 5 = 5.0) Tj ET
+BT /F2 8 Tf 0.100 0.550 0.200 rg 485.00 554.00 Td (PASS) Tj ET
+q 0.850 0.880 0.920 RG 0.50 w 1.000 1.000 1.000 rg 40.00 533.00 515.00 17.00 re B Q
+BT /F2 7.8 Tf 0.100 0.100 0.100 rg 48.00 537.00 Td (T3) Tj ET
+BT /F1 7.6 Tf 0.150 0.150 0.150 rg 80.00 537.00 Td (MultiplyStrategy Execution) Tj ET
+BT /F3 7.2 Tf 0.100 0.250 0.450 rg 250.00 537.00 Td (10 * 5 = 50.0) Tj ET
+BT /F2 8 Tf 0.100 0.550 0.200 rg 485.00 537.00 Td (PASS) Tj ET
+q 0.850 0.880 0.920 RG 0.50 w 0.970 0.980 1.000 rg 40.00 516.00 515.00 17.00 re B Q
+BT /F2 7.8 Tf 0.100 0.100 0.100 rg 48.00 520.00 Td (T4) Tj ET
+BT /F1 7.6 Tf 0.150 0.150 0.150 rg 80.00 520.00 Td (Runtime Strategy Switch) Tj ET
+BT /F3 7.2 Tf 0.100 0.250 0.450 rg 250.00 520.00 Td (sameInstance=true | Add -> Multiply) Tj ET
+BT /F2 8 Tf 0.100 0.550 0.200 rg 485.00 520.00 Td (PASS) Tj ET
+q 0.850 0.880 0.920 RG 0.50 w 1.000 1.000 1.000 rg 40.00 499.00 515.00 17.00 re B Q
+BT /F2 7.8 Tf 0.100 0.100 0.100 rg 48.00 503.00 Td (T5) Tj ET
+BT /F1 7.6 Tf 0.150 0.150 0.150 rg 80.00 503.00 Td (DivideStrategy Extension) Tj ET
+BT /F3 7.2 Tf 0.100 0.250 0.450 rg 250.00 503.00 Td (10 / 5 = 2.0) Tj ET
+BT /F2 8 Tf 0.100 0.550 0.200 rg 485.00 503.00 Td (PASS) Tj ET
+q 0.850 0.880 0.920 RG 0.50 w 0.970 0.980 1.000 rg 40.00 482.00 515.00 17.00 re B Q
+BT /F2 7.8 Tf 0.100 0.100 0.100 rg 48.00 486.00 Td (T6) Tj ET
+BT /F1 7.6 Tf 0.150 0.150 0.150 rg 80.00 486.00 Td (Invariant Null Rejection) Tj ET
+BT /F3 7.2 Tf 0.100 0.250 0.450 rg 250.00 486.00 Td (Constructor & setter reject null strategy safely) Tj ET
+BT /F2 8 Tf 0.100 0.550 0.200 rg 485.00 486.00 Td (PASS) Tj ET
+q 0.850 0.880 0.920 RG 0.50 w 1.000 1.000 1.000 rg 40.00 465.00 515.00 17.00 re B Q
+BT /F2 7.8 Tf 0.100 0.100 0.100 rg 48.00 469.00 Td (T7) Tj ET
+BT /F1 7.6 Tf 0.150 0.150 0.150 rg 80.00 469.00 Td (Input Boundary Defense) Tj ET
+BT /F3 7.2 Tf 0.100 0.250 0.450 rg 250.00 469.00 Td (Division by zero throws ArithmeticException) Tj ET
+BT /F2 8 Tf 0.100 0.550 0.200 rg 485.00 469.00 Td (PASS) Tj ET
+BT /F2 8.5 Tf 0.100 0.550 0.200 rg 48.00 452.00 Td (Overall Test Summary: 7 / 7 Demonstration Checks PASSED \(100% Success Rate\)) Tj ET
+q 0.800 0.850 0.920 RG 0.80 w 0.920 0.940 0.980 rg 40.00 416.00 515.00 20.00 re B Q
+q 0.150 0.350 0.650 rg 40.00 416.00 4.00 20.00 re f Q
+BT /F2 11 Tf 0.100 0.200 0.450 rg 50.00 422.00 Td (7. Conclusion - Flexibility Gained vs. Classes Added) Tj ET
+BT /F1 8.2 Tf 0.200 0.200 0.200 rg 45.00 398.00 Td (Applying the Strategy pattern replaces procedural branching with polymorphic dispatch. While class count increases,) Tj ET
+BT /F1 8.2 Tf 0.200 0.200 0.200 rg 45.00 386.50 Td (the benefits are paramount:) Tj ET
+BT /F1 8.2 Tf 0.200 0.200 0.200 rg 45.00 375.00 Td (1. Dynamic Runtime Interchangeability: Operations are hot-swapped on the same Calculator context instance.) Tj ET
+BT /F1 8.2 Tf 0.200 0.200 0.200 rg 45.00 363.50 Td (2. Zero Regression Risk: New mathematical operations are added as separate files without modifying tested code.) Tj ET
+BT /F1 8.2 Tf 0.200 0.200 0.200 rg 45.00 352.00 Td (3. Independent Testability: Each arithmetic algorithm is isolated and easily unit tested.) Tj ET
+q 0.800 0.850 0.920 RG 0.80 w 0.920 0.940 0.980 rg 40.00 311.00 515.00 20.00 re B Q
+q 0.150 0.350 0.650 rg 40.00 311.00 4.00 20.00 re f Q
+BT /F2 11 Tf 0.100 0.200 0.450 rg 50.00 317.00 Td (8. Academic References) Tj ET
+BT /F1 7.8 Tf 0.300 0.300 0.300 rg 45.00 292.00 Td (1. Freeman, E., & Robson, E. \(2021\). Head First Design Patterns \(2nd ed.\), Ch. 1: Strategy Pattern. O'Reilly.) Tj ET
+BT /F1 7.8 Tf 0.300 0.300 0.300 rg 45.00 280.00 Td (2. Martin, R. C. \(2008\). Clean Code: A Handbook of Agile Software Craftsmanship, Ch. 10: Classes. Prentice Hall.) Tj ET
+BT /F1 7.8 Tf 0.300 0.300 0.300 rg 45.00 268.00 Td (3. Gamma, E., Helm, R., Johnson, R., & Vlissides, J. \(1994\). Design Patterns: Elements of Reusable Object-Oriented Software. Addison-Wesley.) Tj ET
+BT /F1 7.8 Tf 0.300 0.300 0.300 rg 45.00 256.00 Td (4. Lecture 7 Slides: Strategy Pattern Components and Comparison with the State Pattern. Astana IT University LMS.) Tj ET
+BT /F1 8.5 Tf 0.400 0.400 0.400 rg 40.00 32.00 Td (Astana IT University | ShP-2216 Software Design Patterns | Page 3 of 3) Tj ET
+BT /F1 8.5 Tf 0.400 0.400 0.400 rg 450.00 32.00 Td (Alibi Maksut \(SE-2523\)) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+10 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+11 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+12 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier-Bold >>
+endobj
+xref
+0 13
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000127 00000 n 
+0000000292 00000 n 
+0000000457 00000 n 
+0000000622 00000 n 
+0000009156 00000 n 
+0000014758 00000 n 
+0000022530 00000 n 
+0000022600 00000 n 
+0000022676 00000 n 
+0000022745 00000 n 
+trailer
+<< /Size 13 /Root 1 0 R >>
+startxref
+22819
+%%EOF
