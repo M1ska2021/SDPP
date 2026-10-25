@@ -8,7 +8,7 @@ public class Main {
 
     public static void runDemo() {
         int passed = 0;
-        int total = 5;
+        int total = 7;
 
         Calculator calculator = new Calculator(new AddStrategy());
         double res1 = calculator.calculate(10, 5);
@@ -55,6 +55,15 @@ public class Main {
             System.out.println("T4 FAIL | Runtime Strategy Switch");
         }
 
+        calculator.setStrategy(new DivideStrategy());
+        double res5 = calculator.calculate(10, 5);
+        if (res5 == 2.0) {
+            System.out.println("T5 PASS | Calculator + DivideStrategy (Extension) | 10 / 5 = " + res5);
+            passed++;
+        } else {
+            System.out.println("T5 FAIL | Calculator + DivideStrategy");
+        }
+
         boolean nullStrategyCaught = false;
         try {
             new Calculator(null);
@@ -70,10 +79,25 @@ public class Main {
         }
 
         if (nullStrategyCaught && nullSwitchCaught) {
-            System.out.println("T5 PASS | Invariant Defense | Null Strategy Rejection verified");
+            System.out.println("T6 PASS | Invariant Defense | Null Strategy Rejection verified");
             passed++;
         } else {
-            System.out.println("T5 FAIL | Invariant Defense | Null Strategy Rejection failed");
+            System.out.println("T6 FAIL | Invariant Defense | Null Strategy Rejection failed");
+        }
+
+        boolean divisionByZeroCaught = false;
+        try {
+            calculator.setStrategy(new DivideStrategy());
+            calculator.calculate(10, 0);
+        } catch (ArithmeticException e) {
+            divisionByZeroCaught = true;
+        }
+
+        if (divisionByZeroCaught) {
+            System.out.println("T7 PASS | Input Validation | Division by zero rejected safely");
+            passed++;
+        } else {
+            System.out.println("T7 FAIL | Input Validation | Division by zero rejection failed");
         }
 
         System.out.println("SUMMARY: " + passed + "/" + total + " PASS");
