@@ -3,7 +3,6 @@
 - **Student:** Alibi Maksut
 - **Group:** SE-2523
 - **Topic:** Option B (Calculator)
-- **Repository URL:** https://github.com/M1ska2021/Assignment5_Strategy
 
 ---
 
