@@ -1,11 +1,6 @@
 # Assignment #5: Strategy Pattern Report
-
-- **Course:** ShP-2216 – Software Design Patterns
-- **Academic Year:** 2026–2027 (2nd year, 4th trimester)
-- **Institution:** Astana IT University – School of Software Engineering
 - **Student:** Alibi Maksut (Group SE-2523)
 - **Topic:** Option B — Calculator
-- **Repository:** https://github.com/M1ska2021/Assignment5_Strategy
 
 ---
 
